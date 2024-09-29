@@ -1,0 +1,74 @@
+.auth-container {
+    background-image: url('assets/images/body-background.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    max-width: 1920px;
+    width:100%;
+    height:100vh;
+    position:absolute;
+    left:0px;
+    top:0px;
+    font-family: "Plus Jakarta Display","Helvetica","Arial",sans-serif;
+
+    .auth-form {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border:2px solid rgb(77 87 239);
+        width:300px;
+        height:300px;
+        border-radius: 20px;
+        background:rgb(21 5 64);
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            margin-top:33px;
+            margin-bottom:33px;
+            color:white;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        input {
+            outline: none;
+            margin-bottom:15px;
+            width:225px;
+            height:30px;
+            border-radius: 8px;
+            border:2px  rgb(77 87 239) solid;
+            padding-left:10px;
+            
+        }
+
+        input::placeholder {
+            padding-left:0px;
+        }
+
+        input:focus{
+            border:2px rgb(77 87 239) solid;
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top:20px;
+            width:130px;
+            border-radius: 20px;
+            background: #3343b0;
+            border:2px  rgb(77 87 239) solid;
+            height: 36px;
+            cursor:pointer;
+            color:white;
+            
+        }
+
+        button:hover {
+            border:1px rgb(71, 172, 248) solid;
+            background:rgb(71, 172, 248);
+            color:white;
+        }
+    }
+}
